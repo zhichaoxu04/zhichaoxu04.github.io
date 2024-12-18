@@ -67,22 +67,33 @@
 
         /* Fixed 6:8 Aspect Ratio for All Photos */
         .photo-item {
-            aspect-ratio: 6 / 8;
+            display: flex;
+            flex-direction: column; /* Align content vertically */
+            align-items: flex-start; /* Align text to the left */
+            background-color: transparent;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
         .photo-item img {
-            width: 100%;
-            height: auto; /* Ensure proper scaling */
-            object-fit: cover;
+            width: 100%; /* Full width */
+            aspect-ratio: 6 / 8; /* Fix all images to 6:8 ratio */
+            object-fit: cover; /* Ensure proper cropping */
         }
 
         /* Photo Info */
         .photo-info {
-            margin-top: 8px;
             font-size: 14px;
             color: #555;
-            text-align: left; /* Left-align the text */
+            padding: 10px;
+            margin: 0; /* Remove extra spacing */
+            text-align: left;
+            width: 100%; /* Ensure info takes full width */
+            background-color: transparent; /* No background fill */
         }
+
 
         /* Hover Effect */
         .photo-item:hover {
@@ -120,26 +131,9 @@
             <a href="photo2.html">
                 <img src="./Test/IMG_9924.jpeg" alt="Portrait 2">
             </a>
-            <div class="photo-info">Photo 2: Forest Scene</div>
+            <div class="photo-info">Sagwa</div>
         </div>
-        <div class="photo-item">
-            <a href="photo3.html">
-                <img src="https://source.unsplash.com/random/600x800?nature,3" alt="Portrait 3">
-            </a>
-            <div class="photo-info">Photo 3: Mountain Range</div>
-        </div>
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="https://source.unsplash.com/random/600x800?nature,4" alt="Portrait 4">
-            </a>
-            <div class="photo-info">Photo 4: Lakeside View</div>
-        </div>
-        <div class="photo-item">
-            <a href="photo5.html">
-                <img src="https://source.unsplash.com/random/600x800?nature,5" alt="Portrait 5">
-            </a>
-            <div class="photo-info">Photo 5: Sunset Trees</div>
-        </div>
+
 
     </div>
 
