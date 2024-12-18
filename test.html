@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhichao (Zachary) Xu</title>
     <!-- Google Fonts - Modern Font (Roboto Slab) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Roboto Slab', serif;
+            font-family: 'Roboto', serif;
             background-color: #f8f9fa;
             color: #333;
             margin: 0;
@@ -63,16 +63,26 @@
             flex-direction: column; /* Stack image and info vertically */
         }
 
+        /* Aspect Ratios */
+        .photo-item.portrait {
+            aspect-ratio: 6 / 8; /* Portrait 6:8 aspect ratio */
+        }
+
+        .photo-item.landscape {
+            aspect-ratio: 8 / 6; /* Landscape 8:6 aspect ratio */
+        }
+
+        /* Image */
         .photo-item img {
             width: 100%;
-            height: auto; /* Ensure proper aspect ratio */
-            object-fit: cover;
+            height: 100%;
+            object-fit: cover; /* Ensure the image fits inside the container */
         }
 
         /* Photo Info */
         .photo-info {
             text-align: center;
-            background: #fff;
+            background: #f8f9fa;
             padding: 10px;
             font-size: 14px;
             color: #555;
@@ -98,44 +108,48 @@
         <h1>Photo Portfolio</h1>
         <nav>
             <a href="#">Pics</a> |
-            <a href="#">About</a> 
+            <a href="./homepage.html">About</a> 
         </nav>
     </div>
 
     <!-- Photo Grid -->
     <div class="photo-grid">
         <!-- Portrait Photos -->
-        <div class="photo-item">
+        <div class="photo-item portrait">
             <a href="photo1.html">
                 <img src="https://source.unsplash.com/random/600x800?nature,1" alt="Portrait 1">
             </a>
             <div class="photo-info">Photo 1: Nature View</div>
         </div>
-        <div class="photo-item">
+        <div class="photo-item portrait">
             <a href="photo2.html">
                 <img src="https://source.unsplash.com/random/600x800?nature,2" alt="Portrait 2">
             </a>
             <div class="photo-info">Photo 2: Forest Scene</div>
         </div>
-        <div class="photo-item">
+
+        <!-- Landscape Photos -->
+        <div class="photo-item landscape">
             <a href="photo3.html">
                 <img src="https://source.unsplash.com/random/800x600?nature,3" alt="Landscape 1">
             </a>
             <div class="photo-info">Photo 3: Mountain Range</div>
         </div>
-        <div class="photo-item">
+        <div class="photo-item landscape">
             <a href="photo4.html">
                 <img src="https://source.unsplash.com/random/800x600?nature,4" alt="Landscape 2">
             </a>
             <div class="photo-info">Photo 4: Lakeside View</div>
         </div>
-        <div class="photo-item">
+
+        <!-- Mixed Photos -->
+        <div class="photo-item portrait">
             <a href="photo5.html">
                 <img src="https://source.unsplash.com/random/600x800?nature,5" alt="Portrait 3">
             </a>
             <div class="photo-info">Photo 5: Sunset Trees</div>
         </div>
-        <div class="photo-item">
+        <div class="photo-item landscape">
             <a href="photo6.html">
                 <img src="https://source.unsplash.com/random/800x600?nature,6" alt="Landscape 3">
             </a>
