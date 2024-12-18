@@ -18,38 +18,38 @@
             line-height: 1.6;
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        h1 {
-            font-weight: bold;
-            font-size: 30px; /* Larger header */
-            margin: 20px;
-            text-align: left;
-        }
-
         /* Header */
         #header {
-            text-align: left;
-            margin: 40px 0;
+            text-align: left; /* Aligns all text to the left */
+            padding: 20px;    /* Adds padding for spacing */
         }
 
-        #header a {
+        #header h1 {
+            margin: 0; /* Removes default margin */
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        #header nav {
+            margin-top: 10px; /* Adds spacing between header and links */
+        }
+
+        #header nav a {
             font-size: 22px;
-            margin: 40px 0;
+            margin-right: 20px; /* Space between links */
+            text-decoration: none;
+            color: #555;
         }
 
-        #header a:hover {
-            text-decoration: underline;
+        #header nav a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
 
         /* Photo Grid */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* Exactly 3 columns */
-            gap: 20px; /* Space between grid items */
+            gap: 30px; /* Space between grid items */
             padding: 20px;
         }
 
@@ -63,12 +63,12 @@
             border: none; /* Removes any border */
             border-radius: 0;
             overflow: hidden;
-            transition: none;
+            transition: transform 0.3s ease;
         }
 
         .photo-item img {
             width: 100%; /* Full width */
-            aspect-ratio: 8 / 6; /* Fix all images to 6:8 ratio */
+            aspect-ratio: 9 / 6; /* Fix all images to 6:8 ratio */
             object-fit: cover; /* Ensure proper cropping */
         }
 
@@ -81,6 +81,11 @@
             text-align: left;
             width: 100%; /* Ensure info takes full width */
             background-color: transparent; /* No background fill */
+        }
+
+        /* Hover Effect */
+        .photo-item:hover {
+            transform: scale(1.03);
         }
 
         /* Footer */
