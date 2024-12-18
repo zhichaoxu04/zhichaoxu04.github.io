@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhichao (Zachary) Xu</title>
-    <!-- Google Fonts - Modern Font (Inter) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Modern Font (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f8f9fa;
             color: #333;
             margin: 0;
@@ -36,7 +36,7 @@
         #header a {
             margin: 0 10px;
             font-size: 16px;
-            color: #777;
+            color: #555;
         }
 
         #header a:hover {
@@ -46,7 +46,8 @@
         /* Photo Grid */
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible grid */
+            grid-auto-rows: 200px; /* Base row height */
             gap: 20px;
             padding: 20px;
         }
@@ -59,33 +60,46 @@
             overflow: hidden;
             position: relative;
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .photo-item a {
             display: block;
-            width: 100%;
             overflow: hidden;
+            flex: 1; /* Ensure the image takes up most of the space */
         }
 
         .photo-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-item:hover img {
+            transform: scale(1.05);
         }
 
         /* Portrait Photos */
-        .portrait a {
-            aspect-ratio: 8 / 10;
+        .portrait {
+            grid-row: span 2; /* Taller grid item */
         }
 
         /* Landscape Photos */
-        .landscape a {
-            aspect-ratio: 10 / 8;
+        .landscape {
+            grid-column: span 2; /* Wider grid item */
         }
 
-        /* Hover Effect */
-        .photo-item:hover {
-            transform: scale(1.03);
+        /* Photo Info Line */
+        .photo-info {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: #777;
+            border-top: 1px solid #ddd;
         }
 
         /* Footer */
@@ -110,38 +124,62 @@
     <div class="photo-grid">
         <!-- Portrait Photos -->
         <div class="photo-item portrait">
-            <a href="photo1.html"><img src="https://source.unsplash.com/random/800x1000?nature,1" alt="Portrait 1"></a>
+            <a href="photo1.html">
+                <img src="https://source.unsplash.com/random/800x1000?nature,1" alt="Portrait 1">
+            </a>
+            <div class="photo-info">Photo 1: Portrait - Nature View</div>
         </div>
         <div class="photo-item portrait">
-            <a href="photo2.html"><img src="https://source.unsplash.com/random/800x1000?nature,2" alt="Portrait 2"></a>
+            <a href="photo2.html">
+                <img src="https://source.unsplash.com/random/800x1000?nature,2" alt="Portrait 2">
+            </a>
+            <div class="photo-info">Photo 2: Portrait - Forest</div>
         </div>
 
         <!-- Landscape Photos -->
         <div class="photo-item landscape">
-            <a href="photo3.html"><img src="https://source.unsplash.com/random/1000x800?nature,3" alt="Landscape 1"></a>
+            <a href="photo3.html">
+                <img src="https://source.unsplash.com/random/1000x800?nature,3" alt="Landscape 1">
+            </a>
+            <div class="photo-info">Photo 3: Landscape - Mountain View</div>
         </div>
         <div class="photo-item landscape">
-            <a href="photo4.html"><img src="https://source.unsplash.com/random/1000x800?nature,4" alt="Landscape 2"></a>
+            <a href="photo4.html">
+                <img src="https://source.unsplash.com/random/1000x800?nature,4" alt="Landscape 2">
+            </a>
+            <div class="photo-info">Photo 4: Landscape - Lake</div>
         </div>
 
         <!-- Mixed Photos -->
         <div class="photo-item portrait">
-            <a href="photo5.html"><img src="https://source.unsplash.com/random/800x1000?nature,5" alt="Portrait 3"></a>
+            <a href="photo5.html">
+                <img src="https://source.unsplash.com/random/800x1000?nature,5" alt="Portrait 3">
+            </a>
+            <div class="photo-info">Photo 5: Portrait - Trees</div>
         </div>
         <div class="photo-item landscape">
-            <a href="photo6.html"><img src="https://source.unsplash.com/random/1000x800?nature,6" alt="Landscape 3"></a>
+            <a href="photo6.html">
+                <img src="https://source.unsplash.com/random/1000x800?nature,6" alt="Landscape 3">
+            </a>
+            <div class="photo-info">Photo 6: Landscape - Sunset</div>
         </div>
         <div class="photo-item portrait">
-            <a href="photo7.html"><img src="https://source.unsplash.com/random/800x1000?nature,7" alt="Portrait 4"></a>
+            <a href="photo7.html">
+                <img src="https://source.unsplash.com/random/800x1000?nature,7" alt="Portrait 4">
+            </a>
+            <div class="photo-info">Photo 7: Portrait - Fall Leaves</div>
         </div>
         <div class="photo-item landscape">
-            <a href="photo8.html"><img src="https://source.unsplash.com/random/1000x800?nature,8" alt="Landscape 4"></a>
+            <a href="photo8.html">
+                <img src="https://source.unsplash.com/random/1000x800?nature,8" alt="Landscape 4">
+            </a>
+            <div class="photo-info">Photo 8: Landscape - Ocean</div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        &copy; 2024 Photo Portfolio | Designed by You
+        &copy; 2024 Zhichao (Zachary) Xu | Designed by ChatGPT 4o
     </footer>
 </body>
 </html>
