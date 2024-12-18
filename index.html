@@ -78,9 +78,9 @@
 
         /* Photo Info */
         .photo-info {
-            font-size: 15px;
+            font-size: 14px;
             color: #555;
-            margin: 0; /* Remove extra spacing */
+            margin-top: 2px;
             text-align: left;
             width: 100%; /* Ensure info takes full width */
             background-color: transparent; /* No background fill */
@@ -90,6 +90,12 @@
         margin: 2px 0; /* Reduces vertical spacing between lines */
         }
 
+        .photo-info .photo-title {
+        font-weight: medium;
+        font-size: 14px; /* Slightly larger for the title */
+        }
+
+
         /* Hover Effect */
         .photo-item:hover {
             transform: scale(1.03);
@@ -97,7 +103,7 @@
 
         /* Footer */
         footer {
-            text-align: center;
+            text-align: right;
             margin: 20px 0;
             color: #666;
         }
@@ -122,7 +128,7 @@
                 <img src="./Test/IMG_9882.jpeg" alt="Portrait 1">
             </a>
             <div class="photo-info">
-                <p>Sammy</p>
+                <p class="photo-title">Sammy</p>
                 <p>McLean, VA</p>
                 <p>iPhone 16 Pro</p>
             </div>
@@ -132,7 +138,7 @@
                 <img src="./Test/Sagwa.jpeg" alt="Portrait 2">
             </a>
             <div class="photo-info">
-                <p>Sagwa</p>
+                <p class="photo-title">Sagwa</p>
                 <p>McLean, VA</p>
                 <p>iPhone 16 Pro</p>
             </div>
