@@ -26,19 +26,22 @@
 
         #header h1 {
             margin: 0; /* Removes default margin */
-            margin-top: 40px;
-            font-size: 28px;
+            margin-top: 50px;
+            font-size: 25px;
             font-weight: bold;
         }
 
         #header nav {
+            display: flex; /* Use Flexbox for even spacing */
+            justify-content: flex-start; /* Align items to the start */
+            gap: 15px; /* Space between links */
             margin-top: 5px; /* Adds spacing between header and links */
             border-bottom: 1px solid #ccc; /* Adds grey line below navigation */
-            padding-bottom: 10px; /* Adds space between links and line */
+            padding-bottom: 30px; /* Adds space between links and line */
         }
 
         #header nav a {
-            font-size: 22px;
+            font-size: 20px;
             margin-right: 20px; /* Space between links */
             text-decoration: none;
             color: #555;
@@ -71,7 +74,7 @@
 
         .photo-item img {
             width: 100%; /* Full width */
-            aspect-ratio: 9 / 6; /* Fix all images to 6:8 ratio */
+            aspect-ratio: 16 / 9; /* Fix all images to 6:8 ratio */
             object-fit: cover; /* Ensure proper cropping */
         }
 
