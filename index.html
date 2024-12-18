@@ -79,6 +79,8 @@
         /* Photo Info */
         .photo-info {
             font-size: 14px;
+            justify-content: space-between;
+            display: flex;
             color: #555;
             margin-top: 2px;
             text-align: left;
@@ -87,12 +89,29 @@
         }
 
         .photo-info p {
-        margin: 2px 0; /* Reduces vertical spacing between lines */
+        margin: 1px 0; /* Reduces vertical spacing between lines */
         }
 
         .photo-info .photo-title {
         font-weight: medium;
         font-size: 14px; /* Slightly larger for the title */
+        }
+
+        /* Left and Right sections */
+        .info-left, .info-right {
+        flex: 1; /* Ensures equal width */
+        }
+
+        .info-left p, .info-right p {
+        margin: 1px 0; /* Reduce spacing between lines */
+        }
+
+        .info-left {
+        text-align: left; /* Align text to the left */
+        }
+
+        .info-right {
+        text-align: right; /* Align text to the right */
         }
 
 
@@ -128,9 +147,15 @@
                 <img src="./Test/IMG_9882.jpeg" alt="Portrait 1">
             </a>
             <div class="photo-info">
-                <p class="photo-title">Sammy</p>
-                <p>McLean, VA</p>
-                <p>iPhone 16 Pro</p>
+                <div class="info-left">
+                    <p class="photo-title">Sagwa</p>
+                    <p>McLean, VA</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 16 Pro</p>
+                    <p>December 2024</p>
+                </div>
             </div>
         </div>
         <div class="photo-item">
