@@ -42,45 +42,52 @@
         /* Publication */
 
           .itembox{
-    margin-bottom: 20px;
-    margin-left:30px;
-    line-height: 0.5cm;
-  }
-  .teaser{
-    padding-left: 0;
-    padding-right: 0;
-    border: solid 1px lightgray;
-    width: 220px;
-    margin-right:20px;
-  }
-  .introbox{
-    padding-left: 10px;
-    padding-right: 0;
-    padding-top: 10px;
-    width: 700px;
-    margin-right:20px;
-  }
-  .myproject{
-    padding-left: 10px;
-    padding-right: 0;
-    padding-top: 10px;
-    width: 700px;
-    margin-right:20px;
-    background-color:#FeFFE0;
-  }
-  .authorlist{
-    font-size: 0.8rem;
-    font-size: 13px;
-    margin-bottom: 0;
-  }
-  .title{
-    font-size: 15px;
-    margin-bottom: 0;
-  }
-  .source{
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
+              margin-bottom: 20px;
+              margin-left:30px;
+              line-height: 0.5cm;
+          }
+        .teaser{
+            padding-left: 0;
+            padding-right: 0;
+            border: solid 1px lightgray;
+            width: 220px;
+            margin-right:20px;
+        }
+        .introbox{
+            padding-left: 10px;
+            padding-right: 0;
+            padding-top: 10px;
+            width: 700px;
+            margin-right:20px;
+        }
+        .myproject{
+            padding-left: 10px;
+            padding-right: 0;
+            padding-top: 10px;
+            width: 700px;
+            margin-right:20px;
+            background-color:#FeFFE0;
+        }
+        .authorlist{
+            font-size: 0.8rem;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        .title{
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .source{
+            font-size: 0.8rem;
+            font-weight: 400;
+        }.row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left:-15px
+        }
 
         /* Header */
         #header {
@@ -181,19 +188,18 @@
         <hr style="margin-top:0; border: none; border-top: 1px solid #ccc; height: 1px;">
         * indicates equal contribution
         <br><br>
+
         <div class="itembox">
-
+          <div class="row">
             <div class="teaser">
-              <img src="static/oc_sort.png" style="width:100%;height:100%">
+              <img src="static/omnigrasp.gif" style="width:100%">
             </div>
-            <div class="introbox">
-              <p class="title"><b>Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking</b></p>
-              <p class="authorlist"><i><b>Jinkun Cao</b>, Jiangmiao Pang, Xinshuo Weng, Rawal Khirodkar, Kris Kitani</i></p>
-              <p class="source">CVPR 2023 <a href="https://arxiv.org/abs/2203.14360">[arxiv]</a>  
-                <a href="https://github.com/noahcao/OC_SORT">[code]</a> 
-              <a href="https://github.com/open-mmlab/mmtracking">[mmtracking]</a></p>
+            <div class="myproject">
+              <p class="title"><b>Grasping Diverse Objects with Simulated Humanoids</b></p>
+              <p class="authorlist"><i> Zhengyi Luo*, <b>Jinkun Cao*</b>, Sammy Christen, Alexander Winkler, Kris Kitani, Weipeng Xu</i></p>
+              <p class="source">NeurIPS 2024 <a href="https://zhengyiluo.github.io/Omnigrasp">[project]</a> </p>
             </div>
-
+          </div>
         </div>
 
 
