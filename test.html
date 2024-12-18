@@ -46,8 +46,8 @@
         /* Photo Grid */
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+            gap: 20px; /* Space between grid items */
             padding: 20px;
         }
 
@@ -59,20 +59,13 @@
             border-radius: 5px;
             overflow: hidden;
             transition: transform 0.3s ease;
-        }
-
-        /* Enforce Aspect Ratios */
-        .photo-item.portrait {
-            aspect-ratio: 6 / 8; /* Portrait aspect ratio */
-        }
-
-        .photo-item.landscape {
-            aspect-ratio: 8 / 6; /* Landscape aspect ratio */
+            display: flex;
+            flex-direction: column; /* Stack image and info vertically */
         }
 
         .photo-item img {
             width: 100%;
-            height: 100%;
+            height: auto; /* Ensure proper aspect ratio */
             object-fit: cover;
         }
 
@@ -104,54 +97,49 @@
     <div id="header">
         <h1>Photo Portfolio</h1>
         <nav>
-            <a href="#">Work</a> |
-            <a href="#">About</a> |
-            <a href="#">Contact</a>
+            <a href="#">Pics</a> |
+            <a href="#">About</a> 
         </nav>
     </div>
 
     <!-- Photo Grid -->
     <div class="photo-grid">
         <!-- Portrait Photos -->
-        <div class="photo-item portrait">
+        <div class="photo-item">
             <a href="photo1.html">
                 <img src="https://source.unsplash.com/random/600x800?nature,1" alt="Portrait 1">
             </a>
-            <div class="photo-info">Photo 1: Portrait - Nature View</div>
+            <div class="photo-info">Photo 1: Nature View</div>
         </div>
-        <div class="photo-item portrait">
+        <div class="photo-item">
             <a href="photo2.html">
                 <img src="https://source.unsplash.com/random/600x800?nature,2" alt="Portrait 2">
             </a>
-            <div class="photo-info">Photo 2: Portrait - Forest Scene</div>
+            <div class="photo-info">Photo 2: Forest Scene</div>
         </div>
-
-        <!-- Landscape Photos -->
-        <div class="photo-item landscape">
+        <div class="photo-item">
             <a href="photo3.html">
                 <img src="https://source.unsplash.com/random/800x600?nature,3" alt="Landscape 1">
             </a>
-            <div class="photo-info">Photo 3: Landscape - Mountain Range</div>
+            <div class="photo-info">Photo 3: Mountain Range</div>
         </div>
-        <div class="photo-item landscape">
+        <div class="photo-item">
             <a href="photo4.html">
                 <img src="https://source.unsplash.com/random/800x600?nature,4" alt="Landscape 2">
             </a>
-            <div class="photo-info">Photo 4: Landscape - Lakeside View</div>
+            <div class="photo-info">Photo 4: Lakeside View</div>
         </div>
-
-        <!-- Mixed Photos -->
-        <div class="photo-item portrait">
+        <div class="photo-item">
             <a href="photo5.html">
                 <img src="https://source.unsplash.com/random/600x800?nature,5" alt="Portrait 3">
             </a>
-            <div class="photo-info">Photo 5: Portrait - Sunset Trees</div>
+            <div class="photo-info">Photo 5: Sunset Trees</div>
         </div>
-        <div class="photo-item landscape">
+        <div class="photo-item">
             <a href="photo6.html">
                 <img src="https://source.unsplash.com/random/800x600?nature,6" alt="Landscape 3">
             </a>
-            <div class="photo-info">Photo 6: Landscape - Ocean Waves</div>
+            <div class="photo-info">Photo 6: Ocean Waves</div>
         </div>
     </div>
 
