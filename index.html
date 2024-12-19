@@ -52,29 +52,22 @@
 
         /* Photo Grid */
         .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Exactly 3 columns */
-            gap: 20px; /* Space between grid items */
+            column-count: 4; /* Number of columns */
+            column-gap: 20px; /* Space between columns */
             padding: 20px;
-            align-items: start; /* Align items at the start of each row */
         }
 
         /* Photo Item Wrapper */
         /* Fixed 6:8 Aspect Ratio for All Photos */
         .photo-item {
-            /*display: flex;
-            flex-direction: column; /* Align content vertically */
-            /*align-items: flex-start; /* Align text to the left */
-            background-color: transparent;
-            overflow: hidden;
+            break-inside: avoid; /* Prevents items from breaking across columns */
+            margin-bottom: 20px; /* Space between items */
             transition: transform 0.3s ease;
         }
 
         .photo-item img {
             width: 100%; /* Full width */
-            object-fit: contain; /* Ensure proper cropping */
             height: auto; /* Adjust height based on aspect ratio */
-            display: block; /* Removes any extra space below the image */
         }
 
         /* Photo Info */
