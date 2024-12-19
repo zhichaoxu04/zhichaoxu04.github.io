@@ -52,9 +52,15 @@
 
         /* Photo Grid */
         .photo-grid {
-            column-count: 4; /* Number of columns */
-            column-gap: 20px; /* Space between columns */
-            padding: 20px;
+            display: flex;
+            gap: 20px; /* Space between columns */
+        }
+
+        .photo-column {
+            display: flex;     
+            flex-direction: column; /* Images flow vertically in each column */        
+            gap: 20px; /* Space between items in the column */
+            align-items: flex-start; /* Align images to the top of each column */
         }
 
         /* Photo Item Wrapper */
@@ -131,8 +137,10 @@
     </div>
 
     <!-- Photo Grid -->
+
     <div class="photo-grid">
-        <!-- Photos -->
+    <!-- First column -->
+    <div class="photo-column">
         <div class="photo-item">
             <a href="photo1.html">
                 <img src="./Test/IMG_9882.jpeg" alt="Portrait 1">
@@ -149,7 +157,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="photo-item">
+            <a href="photo4.html">
+                <img src="./Test/Test3.jpeg" alt="Portrait 3">
+            </a>
+            <div class="photo-info">
+                <div class="info-left">
+                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
+                    <p>Honokaa, Hawaii</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 15 Pro</p>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
         
+    </div>
+
+    <!-- Second column -->
+    <div class="photo-column">
         <div class="photo-item">
             <a href="photo2.html">
                 <img src="./Test/Sagwa.jpeg" alt="Portrait 2">
@@ -167,175 +200,6 @@
             </div>
         </div>
 
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="photo-item">
-            <a href="photo4.html">
-                <img src="./Test/Test3.jpeg" alt="Portrait 3">
-            </a>
-            <div class="photo-info">
-                <div class="info-left">
-                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
-                    <p>Honokaa, Hawaii</p>
-                </div>
-                
-                <div class="info-right">
-                    <p>iPhone 15 Pro</p>
-                    <p>Apr 2024</p>
-                </div>
-            </div>
-        </div>
 
         <div class="photo-item">
             <a href="photo4.html">
@@ -355,7 +219,113 @@
         </div>
 
 
+        
     </div>
+
+    <!-- Third column -->
+    <div class="photo-column">
+        <div class="photo-item">
+            <a href="photo4.html">
+                <img src="./Test/Test3.jpeg" alt="Portrait 3">
+            </a>
+            <div class="photo-info">
+                <div class="info-left">
+                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
+                    <p>Honokaa, Hawaii</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 15 Pro</p>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-item">
+            <a href="photo4.html">
+                <img src="./Test/Test3.jpeg" alt="Portrait 3">
+            </a>
+            <div class="photo-info">
+                <div class="info-left">
+                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
+                    <p>Honokaa, Hawaii</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 15 Pro</p>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-item">
+            <a href="photo4.html">
+                <img src="./Test/Test3.jpeg" alt="Portrait 3">
+            </a>
+            <div class="photo-info">
+                <div class="info-left">
+                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
+                    <p>Honokaa, Hawaii</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 15 Pro</p>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+    </div>
+
+    <!-- Fourth column -->
+    <div class="photo-column">
+        <div class="photo-item">
+            <a href="photo4.html">
+                <img src="./Test/Test3.jpeg" alt="Portrait 3">
+            </a>
+            <div class="photo-info">
+                <div class="info-left">
+                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
+                    <p>Honokaa, Hawaii</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 15 Pro</p>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-item">
+            <a href="photo4.html">
+                <img src="./Test/Test3.jpeg" alt="Portrait 3">
+            </a>
+            <div class="photo-info">
+                <div class="info-left">
+                    <p class="photo-title"><b>Ka'ohe Mauka</b></p>
+                    <p>Honokaa, Hawaii</p>
+                </div>
+                
+                <div class="info-right">
+                    <p>iPhone 15 Pro</p>
+                    <p>Apr 2024</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        
+    </div>
+</div>
+
+
+    
 
     <!-- Footer -->
     <footer>
