@@ -53,7 +53,7 @@
         /* Photo Grid */
         .photo-grid {
             display: grid;
-            /* grid-template-columns: repeat(4, 1fr); /* Exactly 3 columns */
+            grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
             gap: 50px; /* Space between grid items */
             padding: 20px;
         }
@@ -73,7 +73,7 @@
 
         .photo-item img {
             width: 100%; /* Full width */
-            object-fit: cover; /* Ensure proper cropping */
+            object-fit: contain; /* Ensure proper cropping */
         }
 
         /* Photo Info */
